@@ -1,0 +1,16 @@
+.container{
+	width: 400px;
+	height: 400px;
+}
+#dice{
+	width: 150px;
+	background-color: aliceblue;
+	height: 150px;
+}
+table, th, td,tr{
+	border: 1px solid blue;
+	padding:10px;
+}
+.img-property{
+	width: 60px;
+}
