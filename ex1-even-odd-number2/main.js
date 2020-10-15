@@ -2,6 +2,9 @@ function showNumbers(type){
 		var htmlCode ="";
 		var num1 = parseInt(document.querySelector("#num1").value);
 		var num2 = parseInt(document.querySelector("#num2").value);
+		if (num1>num2){
+			alert('First number must be bigger')
+		}
 		for (i = num1; i <= num2; i++){
 				if (isOdd(i)){
 					if(type=='odd'){

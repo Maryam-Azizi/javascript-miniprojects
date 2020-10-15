@@ -1,7 +1,7 @@
 const btnStart = document.getElementById('btn-start');
 const multipleQuestionElm = document.getElementById('multiple-question');
 const feedbackElm = document.getElementById('feedback');
-const btnNextQuestion = document.getElementById('next-question');
+const participantAnswer = document.querySelector("#input-answer");
 
 const btnCheckAnswer = document.getElementById('btn-check-answer');
 let correctAnswer = [];
@@ -24,12 +24,12 @@ function createRandomNumbers() {
 }
 
 function checkAnswer() {
-    answerParticipant = document.querySelector("#input-answer").value;
-    if (answerParticipant === "") {
+   let answer = participantAnswer.value;
+    if (answer === "") {
 
         alert('Enter your answer');
     }
-    if (correctAnswer == answerParticipant) {
+    if (correctAnswer == answer) {
         feedbackElm.innerHTML = `correct`;
         document.querySelector("#input-answer").value = "";
 
