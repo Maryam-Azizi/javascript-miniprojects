@@ -29,7 +29,7 @@ function formValidation(e) {
         messages.push(addIsRequierd(' First name '));
         errorMessagesElm.push(firstName);
     }
-    else if (/^[0-9]*$/.test(firstName.value)) {
+    else if (!isNumber()) {
 
         messages.push(addIncorrectNumber(' First name '));
     }
